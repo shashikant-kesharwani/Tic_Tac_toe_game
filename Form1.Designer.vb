@@ -236,6 +236,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        BackgroundImage = My.Resources.Resources.back_image_Tic_tac_toe
         ClientSize = New Size(1101, 726)
         Controls.Add(btnstart)
         Controls.Add(btnsubmit)

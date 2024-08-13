@@ -19,6 +19,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn2.Enabled = False
     End Sub
 
@@ -30,6 +31,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn3.Enabled = False
     End Sub
 
@@ -41,6 +43,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn4.Enabled = False
     End Sub
 
@@ -52,6 +55,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn5.Enabled = False
     End Sub
 
@@ -63,6 +67,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn6.Enabled = False
     End Sub
 
@@ -74,6 +79,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn7.Enabled = False
     End Sub
 
@@ -85,6 +91,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn8.Enabled = False
     End Sub
 
@@ -96,6 +103,7 @@
         Else
             lbltext.Text = "X's Term"
         End If
+
         btn9.Enabled = False
     End Sub
 
@@ -169,6 +177,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         btn1.Enabled = False
         btn2.Enabled = False
         btn3.Enabled = False
@@ -181,6 +190,7 @@
         btncheck.Enabled = False
         btnclear.Enabled = False
         lbltext.Enabled = False
+        MessageBox.Show("Please fill Player's name before playing game!!! ", "SICS")
     End Sub
 
     Private Sub btnstart_Click(sender As Object, e As EventArgs) Handles btnstart.Click
