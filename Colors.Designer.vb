@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class HangMan_Game
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Colors
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class HangMan_Game
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HangMan_Game))
         PictureBox1 = New PictureBox()
         btnA = New Button()
         btnB = New Button()
@@ -333,7 +332,7 @@ Partial Class HangMan_Game
         Label1.Name = "Label1"
         Label1.Size = New Size(393, 64)
         Label1.TabIndex = 29
-        Label1.Text = "Fruits Name"
+        Label1.Text = "Colors Name"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' btnnext
@@ -375,9 +374,9 @@ Partial Class HangMan_Game
         btnback.Text = "Back"
         btnback.UseVisualStyleBackColor = False
         ' 
-        ' HangMan_Game
+        ' Colors
         ' 
-        AutoScaleDimensions = New SizeF(12F, 28F)
+        AutoScaleDimensions = New SizeF(12.0F, 28.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.hangman
         BackgroundImageLayout = ImageLayout.Stretch
@@ -416,10 +415,9 @@ Partial Class HangMan_Game
         Controls.Add(btnB)
         Controls.Add(btnA)
         Controls.Add(PictureBox1)
-        Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Font = New Font("Segoe UI", 12.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
-        Name = "HangMan_Game"
+        Name = "Colors"
         StartPosition = FormStartPosition.CenterScreen
         Text = "HangMan_Game"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

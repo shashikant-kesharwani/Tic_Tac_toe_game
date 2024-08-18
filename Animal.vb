@@ -1,5 +1,5 @@
 ﻿Imports System.Diagnostics.Eventing.Reader
-Public Class HangMan_Game
+Public Class Animal
     Dim str As String
     Dim i, j As Integer
     Dim char1 As Char
@@ -9,7 +9,7 @@ Public Class HangMan_Game
         txtresult.Clear()
         PictureBox1.Image = My.Resources.hang0
         n = 0
-        str = "Apple"
+        str = "Tiger"
         nextf = 1
         number = 0
         Lblnumber.Text = number
@@ -60,7 +60,7 @@ Public Class HangMan_Game
             Lblnumber.Text = number
             txtresult.Clear()
             PictureBox1.Image = My.Resources.hang0
-            str = "Apple"
+            str = "Tiger"
             nextf = 1
             n = 0
             str = str.ToUpper()
@@ -475,61 +475,61 @@ Public Class HangMan_Game
         n = 0
         PictureBox1.Image = My.Resources.hang0
         If nextf = 1 Then
-            str = "banana"
+            str = "Lion"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 2 Then
-            str = "Grapes"
+            str = "Dog"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 3 Then
-            str = "mango"
+            str = "Cat"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 4 Then
-            str = "orange"
+            str = "Zebra"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 5 Then
-            str = "fig"
+            str = "Horse"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 6 Then
-            str = "coconut"
+            str = "Camel"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 7 Then
-            str = "pomegrante"
+            str = "Fox"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 8 Then
-            str = "pineapple"
+            str = "Elephant"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 9 Then
-            str = "papaya"
+            str = "Deer"
             number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 10 Then
-            str = "guava"
+            str = "Monkey"
             number += 1
             nextf += 1
             str = str.ToUpper()
