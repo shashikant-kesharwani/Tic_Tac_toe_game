@@ -22,6 +22,7 @@ Partial Class HangMan_Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HangMan_Game))
         PictureBox1 = New PictureBox()
         btnA = New Button()
         btnB = New Button()
@@ -61,6 +62,7 @@ Partial Class HangMan_Game
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.BackgroundImageLayout = ImageLayout.None
         PictureBox1.Location = New Point(629, 127)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(418, 585)
@@ -73,7 +75,7 @@ Partial Class HangMan_Game
         btnA.Name = "btnA"
         btnA.Size = New Size(48, 41)
         btnA.TabIndex = 1
-        btnA.Text = "A"
+        btnA.Text = "&A"
         btnA.UseVisualStyleBackColor = True
         ' 
         ' btnB
@@ -82,7 +84,7 @@ Partial Class HangMan_Game
         btnB.Name = "btnB"
         btnB.Size = New Size(51, 41)
         btnB.TabIndex = 2
-        btnB.Text = "B"
+        btnB.Text = "&B"
         btnB.UseVisualStyleBackColor = True
         ' 
         ' btnC
@@ -91,7 +93,7 @@ Partial Class HangMan_Game
         btnC.Name = "btnC"
         btnC.Size = New Size(47, 41)
         btnC.TabIndex = 3
-        btnC.Text = "C"
+        btnC.Text = "&C"
         btnC.UseVisualStyleBackColor = True
         ' 
         ' btnD
@@ -100,7 +102,7 @@ Partial Class HangMan_Game
         btnD.Name = "btnD"
         btnD.Size = New Size(47, 41)
         btnD.TabIndex = 4
-        btnD.Text = "D"
+        btnD.Text = "&D"
         btnD.UseVisualStyleBackColor = True
         ' 
         ' btnE
@@ -109,7 +111,7 @@ Partial Class HangMan_Game
         btnE.Name = "btnE"
         btnE.Size = New Size(50, 41)
         btnE.TabIndex = 5
-        btnE.Text = "E"
+        btnE.Text = "&E"
         btnE.UseVisualStyleBackColor = True
         ' 
         ' btnF
@@ -118,7 +120,7 @@ Partial Class HangMan_Game
         btnF.Name = "btnF"
         btnF.Size = New Size(49, 41)
         btnF.TabIndex = 6
-        btnF.Text = "F"
+        btnF.Text = "&F"
         btnF.UseVisualStyleBackColor = True
         ' 
         ' btnG
@@ -127,7 +129,7 @@ Partial Class HangMan_Game
         btnG.Name = "btnG"
         btnG.Size = New Size(45, 41)
         btnG.TabIndex = 7
-        btnG.Text = "G"
+        btnG.Text = "&G"
         btnG.UseVisualStyleBackColor = True
         ' 
         ' btnH
@@ -136,7 +138,7 @@ Partial Class HangMan_Game
         btnH.Name = "btnH"
         btnH.Size = New Size(52, 41)
         btnH.TabIndex = 8
-        btnH.Text = "H"
+        btnH.Text = "&H"
         btnH.UseVisualStyleBackColor = True
         ' 
         ' btnI
@@ -145,7 +147,7 @@ Partial Class HangMan_Game
         btnI.Name = "btnI"
         btnI.Size = New Size(48, 39)
         btnI.TabIndex = 9
-        btnI.Text = "I"
+        btnI.Text = "&I"
         btnI.UseVisualStyleBackColor = True
         ' 
         ' btnJ
@@ -154,7 +156,7 @@ Partial Class HangMan_Game
         btnJ.Name = "btnJ"
         btnJ.Size = New Size(51, 39)
         btnJ.TabIndex = 10
-        btnJ.Text = "J"
+        btnJ.Text = "&J"
         btnJ.UseVisualStyleBackColor = True
         ' 
         ' btnK
@@ -163,7 +165,7 @@ Partial Class HangMan_Game
         btnK.Name = "btnK"
         btnK.Size = New Size(47, 39)
         btnK.TabIndex = 11
-        btnK.Text = "K"
+        btnK.Text = "&K"
         btnK.UseVisualStyleBackColor = True
         ' 
         ' btnL
@@ -172,7 +174,7 @@ Partial Class HangMan_Game
         btnL.Name = "btnL"
         btnL.Size = New Size(47, 39)
         btnL.TabIndex = 12
-        btnL.Text = "L"
+        btnL.Text = "&L"
         btnL.UseVisualStyleBackColor = True
         ' 
         ' btnM
@@ -181,7 +183,7 @@ Partial Class HangMan_Game
         btnM.Name = "btnM"
         btnM.Size = New Size(50, 39)
         btnM.TabIndex = 13
-        btnM.Text = "M"
+        btnM.Text = "&M"
         btnM.UseVisualStyleBackColor = True
         ' 
         ' btnN
@@ -190,7 +192,7 @@ Partial Class HangMan_Game
         btnN.Name = "btnN"
         btnN.Size = New Size(49, 39)
         btnN.TabIndex = 14
-        btnN.Text = "N"
+        btnN.Text = "&N"
         btnN.UseVisualStyleBackColor = True
         ' 
         ' btnO
@@ -199,7 +201,7 @@ Partial Class HangMan_Game
         btnO.Name = "btnO"
         btnO.Size = New Size(45, 39)
         btnO.TabIndex = 15
-        btnO.Text = "O"
+        btnO.Text = "&O"
         btnO.UseVisualStyleBackColor = True
         ' 
         ' btnP
@@ -208,7 +210,7 @@ Partial Class HangMan_Game
         btnP.Name = "btnP"
         btnP.Size = New Size(52, 39)
         btnP.TabIndex = 16
-        btnP.Text = "P"
+        btnP.Text = "&P"
         btnP.UseVisualStyleBackColor = True
         ' 
         ' btnQ
@@ -217,7 +219,7 @@ Partial Class HangMan_Game
         btnQ.Name = "btnQ"
         btnQ.Size = New Size(48, 39)
         btnQ.TabIndex = 17
-        btnQ.Text = "Q"
+        btnQ.Text = "&Q"
         btnQ.UseVisualStyleBackColor = True
         ' 
         ' btnR
@@ -226,7 +228,7 @@ Partial Class HangMan_Game
         btnR.Name = "btnR"
         btnR.Size = New Size(51, 39)
         btnR.TabIndex = 18
-        btnR.Text = "R"
+        btnR.Text = "&R"
         btnR.UseVisualStyleBackColor = True
         ' 
         ' btnS
@@ -235,7 +237,7 @@ Partial Class HangMan_Game
         btnS.Name = "btnS"
         btnS.Size = New Size(47, 39)
         btnS.TabIndex = 19
-        btnS.Text = "S"
+        btnS.Text = "&S"
         btnS.UseVisualStyleBackColor = True
         ' 
         ' btnT
@@ -244,7 +246,7 @@ Partial Class HangMan_Game
         btnT.Name = "btnT"
         btnT.Size = New Size(47, 39)
         btnT.TabIndex = 20
-        btnT.Text = "T"
+        btnT.Text = "&T"
         btnT.UseVisualStyleBackColor = True
         ' 
         ' btnU
@@ -253,7 +255,7 @@ Partial Class HangMan_Game
         btnU.Name = "btnU"
         btnU.Size = New Size(50, 39)
         btnU.TabIndex = 21
-        btnU.Text = "U"
+        btnU.Text = "&U"
         btnU.UseVisualStyleBackColor = True
         ' 
         ' btnV
@@ -262,7 +264,7 @@ Partial Class HangMan_Game
         btnV.Name = "btnV"
         btnV.Size = New Size(49, 39)
         btnV.TabIndex = 22
-        btnV.Text = "V"
+        btnV.Text = "&V"
         btnV.UseVisualStyleBackColor = True
         ' 
         ' btnW
@@ -271,7 +273,7 @@ Partial Class HangMan_Game
         btnW.Name = "btnW"
         btnW.Size = New Size(47, 42)
         btnW.TabIndex = 23
-        btnW.Text = "W"
+        btnW.Text = "&W"
         btnW.UseVisualStyleBackColor = True
         ' 
         ' btnX
@@ -280,7 +282,7 @@ Partial Class HangMan_Game
         btnX.Name = "btnX"
         btnX.Size = New Size(52, 42)
         btnX.TabIndex = 24
-        btnX.Text = "X"
+        btnX.Text = "&X"
         btnX.UseVisualStyleBackColor = True
         ' 
         ' btnY
@@ -289,7 +291,7 @@ Partial Class HangMan_Game
         btnY.Name = "btnY"
         btnY.Size = New Size(47, 45)
         btnY.TabIndex = 25
-        btnY.Text = "Y"
+        btnY.Text = "&Y"
         btnY.UseVisualStyleBackColor = True
         ' 
         ' btnZ
@@ -298,7 +300,7 @@ Partial Class HangMan_Game
         btnZ.Name = "btnZ"
         btnZ.Size = New Size(50, 45)
         btnZ.TabIndex = 26
-        btnZ.Text = "Z"
+        btnZ.Text = "&Z"
         btnZ.UseVisualStyleBackColor = True
         ' 
         ' btnstart
@@ -313,6 +315,7 @@ Partial Class HangMan_Game
         ' 
         ' txtresult
         ' 
+        txtresult.BackColor = Color.LemonChiffon
         txtresult.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         txtresult.Location = New Point(12, 219)
         txtresult.Multiline = True
@@ -376,6 +379,8 @@ Partial Class HangMan_Game
         ' 
         AutoScaleDimensions = New SizeF(12F, 28F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = My.Resources.Resources.hangman
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1076, 733)
         Controls.Add(btnexit)
         Controls.Add(Lblnumber)
@@ -412,6 +417,7 @@ Partial Class HangMan_Game
         Controls.Add(btnA)
         Controls.Add(PictureBox1)
         Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(4)
         Name = "HangMan_Game"
         StartPosition = FormStartPosition.CenterScreen

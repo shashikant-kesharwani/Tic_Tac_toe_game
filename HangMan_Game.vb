@@ -564,14 +564,12 @@ Public Class HangMan_Game
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
-        End If
-        Lblnumber.Text = number
-        If nextf > 10 Then
+        Else
             MessageBox.Show("Congratulation !!" & vbCrLf & "You Crack All level !!", "SICS")
             MessageBox.Show("******End The Game******** ", "SICS")
             Me.Close()
         End If
-
+        Lblnumber.Text = number
     End Sub
 
     Sub win(value2 As String)
