@@ -5,15 +5,43 @@ Public Class HangMan_Game
     Dim i, j As Integer
     Dim char1 As Char
     Dim n As Integer = 0
-    Dim nextf As Integer
+    Dim nextf, number As Integer
     Private Sub btnstart_Click(sender As Object, e As EventArgs) Handles btnstart.Click
         txtresult.Clear()
         PictureBox1.Image = My.Resources.hang0
+        n = 0
         str = "Apple"
         nextf = 1
+        number = 0
+        Lblnumber.Text = number
         str = str.ToUpper()
         txtresult.Text = New String("-"c, str.Length) ' Initialize with dashes
-
+        btnA.Enabled = True
+        btnB.Enabled = True
+        btnC.Enabled = True
+        btnD.Enabled = True
+        btnE.Enabled = True
+        btnF.Enabled = True
+        btnG.Enabled = True
+        btnH.Enabled = True
+        btnI.Enabled = True
+        btnJ.Enabled = True
+        btnK.Enabled = True
+        btnL.Enabled = True
+        btnM.Enabled = True
+        btnN.Enabled = True
+        btnO.Enabled = True
+        btnP.Enabled = True
+        btnQ.Enabled = True
+        btnR.Enabled = True
+        btnS.Enabled = True
+        btnT.Enabled = True
+        btnU.Enabled = True
+        btnV.Enabled = True
+        btnW.Enabled = True
+        btnX.Enabled = True
+        btnY.Enabled = True
+        btnZ.Enabled = True
     End Sub
     Sub hang(num As Integer)
         If n = 1 Then
@@ -29,10 +57,13 @@ Public Class HangMan_Game
         ElseIf n = 6 Then
             PictureBox1.Image = My.Resources.hang6
             MessageBox.Show("You lose the Game !!!", "SICS")
+            number = 0
+            Lblnumber.Text = number
             txtresult.Clear()
             PictureBox1.Image = My.Resources.hang0
             str = "Apple"
             nextf = 1
+            n = 0
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         End If
@@ -42,7 +73,9 @@ Public Class HangMan_Game
         Dim strresult As String = txtresult.Text
         Dim charArray As Char() = strresult.ToCharArray() ' Convert the string to a character array
         charArray(ind) = str1 ' Replace the character at the specific index
-        txtresult.Text = New String(charArray) ' Convert the character array back to a string and update the text
+        Dim value As String = New String(charArray) ' Convert the character array back to a string and update the text
+        txtresult.Text = value
+        win(value)
     End Sub
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
@@ -437,46 +470,120 @@ Public Class HangMan_Game
     End Sub
 
     Private Sub HangMan_Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnnext.Enabled = False
         PictureBox1.Image = My.Resources.hang0
+        btnA.Enabled = False
+        btnB.Enabled = False
+        btnC.Enabled = False
+        btnD.Enabled = False
+        btnE.Enabled = False
+        btnF.Enabled = False
+        btnG.Enabled = False
+        btnH.Enabled = False
+        btnI.Enabled = False
+        btnJ.Enabled = False
+        btnK.Enabled = False
+        btnL.Enabled = False
+        btnM.Enabled = False
+        btnN.Enabled = False
+        btnO.Enabled = False
+        btnP.Enabled = False
+        btnQ.Enabled = False
+        btnR.Enabled = False
+        btnS.Enabled = False
+        btnT.Enabled = False
+        btnU.Enabled = False
+        btnV.Enabled = False
+        btnW.Enabled = False
+        btnX.Enabled = False
+        btnY.Enabled = False
+        btnZ.Enabled = False
     End Sub
 
     Private Sub btnnext_Click(sender As Object, e As EventArgs) Handles btnnext.Click
+        btnnext.Enabled = False
+        n = 0
+        PictureBox1.Image = My.Resources.hang0
         If nextf = 1 Then
             str = "banana"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 2 Then
             str = "Grapes"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 3 Then
             str = "mango"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 4 Then
             str = "orange"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 5 Then
             str = "fig"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 6 Then
             str = "coconut"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         ElseIf nextf = 7 Then
             str = "pomegrante"
+            number += 1
+            nextf += 1
+            str = str.ToUpper()
+            txtresult.Text = New String("-"c, str.Length)
+        ElseIf nextf = 8 Then
+            str = "pineapple"
+            number += 1
+            nextf += 1
+            str = str.ToUpper()
+            txtresult.Text = New String("-"c, str.Length)
+        ElseIf nextf = 9 Then
+            str = "papaya"
+            number += 1
+            nextf += 1
+            str = str.ToUpper()
+            txtresult.Text = New String("-"c, str.Length)
+        ElseIf nextf = 10 Then
+            str = "guava"
+            number += 1
             nextf += 1
             str = str.ToUpper()
             txtresult.Text = New String("-"c, str.Length)
         End If
+        Lblnumber.Text = number
+        If nextf > 10 Then
+            MessageBox.Show("Congratulation !!" & vbCrLf & "You Crack All level !!", "SICS")
+            MessageBox.Show("******End The Game******** ", "SICS")
+            Me.Close()
+        End If
 
+    End Sub
+
+    Sub win(value2 As String)
+        If str = value2 Then
+            MessageBox.Show("You Win!!", "SICS")
+            MessageBox.Show("Go to next level ", "SICS")
+            btnnext.Enabled = True
+        End If
+
+    End Sub
+
+    Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
+        Me.Close()
     End Sub
 End Class

@@ -53,6 +53,9 @@ Partial Class HangMan_Game
         txtresult = New TextBox()
         Label1 = New Label()
         btnnext = New Button()
+        Label2 = New Label()
+        Lblnumber = New Label()
+        btnexit = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -301,7 +304,7 @@ Partial Class HangMan_Game
         ' btnstart
         ' 
         btnstart.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(255))
-        btnstart.Location = New Point(3, 122)
+        btnstart.Location = New Point(12, 596)
         btnstart.Name = "btnstart"
         btnstart.Size = New Size(204, 59)
         btnstart.TabIndex = 27
@@ -315,7 +318,7 @@ Partial Class HangMan_Game
         txtresult.Multiline = True
         txtresult.Name = "txtresult"
         txtresult.ReadOnly = True
-        txtresult.Size = New Size(522, 57)
+        txtresult.Size = New Size(497, 57)
         txtresult.TabIndex = 28
         ' 
         ' Label1
@@ -333,18 +336,50 @@ Partial Class HangMan_Game
         ' btnnext
         ' 
         btnnext.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btnnext.Location = New Point(321, 122)
+        btnnext.Location = New Point(321, 596)
         btnnext.Name = "btnnext"
         btnnext.Size = New Size(188, 59)
         btnnext.TabIndex = 30
         btnnext.Text = "Next"
         btnnext.UseVisualStyleBackColor = False
         ' 
+        ' Label2
+        ' 
+        Label2.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        Label2.Location = New Point(137, 127)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(136, 53)
+        Label2.TabIndex = 31
+        Label2.Text = "Label : - "
+        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Lblnumber
+        ' 
+        Lblnumber.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
+        Lblnumber.Location = New Point(296, 127)
+        Lblnumber.Name = "Lblnumber"
+        Lblnumber.Size = New Size(82, 54)
+        Lblnumber.TabIndex = 32
+        Lblnumber.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnexit
+        ' 
+        btnexit.BackColor = Color.Red
+        btnexit.Location = New Point(170, 661)
+        btnexit.Name = "btnexit"
+        btnexit.Size = New Size(208, 60)
+        btnexit.TabIndex = 33
+        btnexit.Text = "Exit"
+        btnexit.UseVisualStyleBackColor = False
+        ' 
         ' HangMan_Game
         ' 
         AutoScaleDimensions = New SizeF(12F, 28F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1076, 733)
+        Controls.Add(btnexit)
+        Controls.Add(Lblnumber)
+        Controls.Add(Label2)
         Controls.Add(btnnext)
         Controls.Add(Label1)
         Controls.Add(txtresult)
@@ -379,6 +414,7 @@ Partial Class HangMan_Game
         Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
         Name = "HangMan_Game"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "HangMan_Game"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
@@ -416,4 +452,7 @@ Partial Class HangMan_Game
     Friend WithEvents txtresult As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnnext As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Lblnumber As Label
+    Friend WithEvents btnexit As Button
 End Class
